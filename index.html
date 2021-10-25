@@ -11,11 +11,36 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>An Enchanted Adventure</title>
 </head>
 
 <body>
-   
+    <form id="user-form">
+        <label>
+            Who is adventuring today? 
+            <input name="name" type="text">
+        </label>
+        <h1>What character will you play?</h1>
+        <div id="characters">
+            <label>
+                <input type="radio" name="character" value="newbie">
+                Newbie, I'm a brand-new hiker!
+            </label>
+            <label>
+                <input type="radio" name="character" value="expert">
+                Expert, I'll be the guide for this one.
+            </label>
+            <label>
+                <input type="radio" name="character" value="minimalist">
+                Minimalst, I'm bringing nothing! 
+            </label>
+            <label>
+                <input type="radio" name="character" value="minimalist">
+                Maximalist, I'm bringing everything! 
+            </label>
+        </div>
+        <button id="submit-button">Submit</button>
+    </form>
     <script type="module" src="./app.js"></script>
 </body>
 
