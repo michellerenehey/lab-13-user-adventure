@@ -52,9 +52,8 @@
     * Game logic (TBD)
 ### MAP.JS
 * import quest data
-* import function(s) needed
 * grab the link-holder (using the DOM) = mapLinks
-* loop through each quest in the quest-data array
+* loop through each quest in the quest-data array to create links
     * in loop: generate an `<a>` tag 
     * append a with href = `../quest/?id=${<quest-id>}`
     * append a with textContent (set it to the quest.title)
@@ -76,7 +75,7 @@
 ### QUEST.JS
 * import quest-data
 * import functions needed (findByID)
-* use search params to determine which quest to display (params = new URLSearchParams(window.location.search)), and run this through findById(quests, params.get('id))
+* use search params to determine which quest to display (params = new URLSearchParams(window.location.search)), and run this through findById(quests, params.get('id'))
 * update HTML elements with the quest data 
     * grab title, image, description from DOM
     * update each of the above
