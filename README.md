@@ -14,10 +14,10 @@
 
 ## HOME PAGE
 ### HTML 
-- [ ] a form holding: 
-    - [ ] text input for user name
-    - [ ] radio buttons for character choices 
-    - [ ] submit button
+- [x] a form holding: 
+    - [x] text input for user name
+    - [x] radio buttons for character choices 
+    - [x] submit button
 
 ### EVENTS
 * On submit: 
