@@ -42,11 +42,12 @@
 
 ## MAP PAGE
 ### HTML
-- [ ] list of links for each quest 
+- [x] list of links for each quest 
     * generated from quest-data using query parameters: URL = quest?key=value
     * should not be clickable if user has already completed the quest
     * should contain a URL search parameter containing quest ID
 - [ ] image of map 
+- [ ] header that includes adventurer name, insta likes and clif-bar amounts (user **loadProfile()** function)
 ### EVENTS
 * On page load:     
     * Game logic (TBD)
@@ -104,3 +105,8 @@
     * sends the userData up to LS
 
 * **findByID(id)**
+
+**loadProfile()**
+    * grab html header elements (name, character, insta, clif)
+    * call getUser() to grab items from local storage
+    * append name, character, insta, and clif with info from LS

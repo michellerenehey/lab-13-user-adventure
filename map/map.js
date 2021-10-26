@@ -1,9 +1,14 @@
 // import quest list 
 import questArray from '../data/quest-data.js'; 
+import { loadProfile } from '../utils.js';
 
 // grab DOM elements 
 const mapLinks = document.getElementById('map-links'); 
 
+// 
+loadProfile(); 
+
+// 
 for (let quest of questArray){
     const link = document.createElement('a'); 
     link.href = `../quest/?id=${quest.id}`; 
