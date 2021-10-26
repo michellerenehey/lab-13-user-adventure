@@ -1,5 +1,7 @@
 import questArray from '../data/quest-data.js'; 
-import { findById } from '../utils.js'; 
+import { findById, loadProfile } from '../utils.js'; 
+
+loadProfile(); 
 
 const params = new URLSearchParams(window.location.search); 
 const questData = findById(params.get('id'), questArray); 

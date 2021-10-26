@@ -66,6 +66,8 @@
 - [ ] description 
 - [ ] quest image
 - [ ] quest choices (form radio buttons)
+- [ ] header that includes adventurer name, insta likes and clif-bar amounts (user **loadProfile()** function)
+
 
 ### EVENTS
 * On page load: 
