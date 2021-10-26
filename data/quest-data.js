@@ -2,7 +2,7 @@ const aasgard = {
     id: 'aasgard',
     title: 'Trek Up Aasgard Pass',
     map: {},
-    image: ,
+    image: 'aasgard.jpeg',
     description: `You reach Aasgard Pass, and need to decide what to do as you approach. Remember, this pass has 2,230 ft elevation gain in under 1 mile... it will kick your BUTT. What do you do?!`,
     choices: [{
         id: 'continue',
@@ -29,7 +29,7 @@ const goats = {
     id: 'goats',
     title: 'Encounter Mountain Goats!',
     map: {},
-    image: ,
+    image: 'mountain-goat.jpeg',
     description: `Mountain goats are the GOAT of the Enchantments! But, remember, they aren't the most cuddly creatures, and this is their home. You turn around a bend and one is in the middle of the trail. What's your plan?`,
     choices: [{
         id: 'fight',
@@ -56,7 +56,7 @@ const wind = {
     id: 'wind',
     title: 'Suffer A Wind Storm',
     map: {},
-    image: ,
+    image: 'wind.jpeg',
     description: `Conditions can be rough when you're at 9,000 feet. You never know what's going to hit! Today a windstorm sweeps through the land, with raging winds upwards of 80mph. You see the trees start to sway, what do you do?`,
     choices: [{
         id: 'break',
