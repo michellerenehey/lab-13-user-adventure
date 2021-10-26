@@ -28,11 +28,8 @@ for (let choice of questData.choices){
     input.name = 'choice-radio-buttons'; 
     input.required = true; 
     input.value = choice.id; 
-
-    const span = document.createElement('span'); 
-    span.textContent = choice.description;
     
-    label.append(input, span); 
+    label.append(input); 
     questChoices.append(label); 
 }
 
