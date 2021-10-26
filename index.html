@@ -11,16 +11,20 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">  
     <title>An Enchanted Adventure</title>
 </head>
 
 <body>
+    <h1>Welcome to Your Enchanted Adventure</h1>
     <form id="user-form">
         <label>
             Who is adventuring today? 
-            <input name="name" type="text">
+            <input name="name" type="text" placeholder="Enter your name...">
         </label>
-        <h1>What character will you play?</h1>
+        <h2>What character will you play?</h2>
         <div id="characters">
             <label>
                 <input type="radio" name="character" value="newbie">
@@ -41,6 +45,7 @@
         </div>
         <button id="submit-button">Submit</button>
     </form>
+    <img src="./assets/enchantments.jpeg" alt="enchantments">
     <script type="module" src="./app.js"></script>
 </body>
 
