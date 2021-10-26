@@ -1,3 +1,5 @@
+import questArray from "./data/quest-data.js";
+
 export function generateUser(formData){
     return {
         completed: {}, 
@@ -40,4 +42,10 @@ export function loadProfile(){
     insta.textContent = user.insta; 
     clif.textContent = user.clif;
 
+}
+
+export function scoreQuest(choiceObject, questID, userObject){
+    // userObject.insta += choiceObject.insta; 
+    // userObject.clif += choiceObject.clif; 
+    // userObject.completed[questID] = true;
 }
