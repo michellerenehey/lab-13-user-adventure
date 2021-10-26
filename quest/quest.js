@@ -37,17 +37,13 @@ const submitBtn = document.createElement('button');
 submitBtn.textContent = 'Submit'; 
 questChoices.append(submitBtn); 
 
-// questChoices.addEventListener('submit', (e) => {
-//     e.preventDefault(); 
-//     const selectedRadio = document.querySelector('input[type="radio"]:checked'); 
-//     const choice = findById(questData.choices, selectedRadio.value); 
-
-//     const user = getUser(); 
-
-//     scoreQuest(choice, questData.id, user); 
-//     setUser(user); 
-
-//     // display results
-//     // link back to the map
-
-// }); 
+questChoices.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+// grab selected radio button from choices array (findByID)
+// get user data from LS
+// update user using scoreQuest function
+    // takes choice, questID, user
+    // update insta, clif, and completed object
+// reset LS
+// display the result associated with the button 
+// display a link to go back to the map 

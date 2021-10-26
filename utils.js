@@ -1,4 +1,4 @@
-import questArray from "./data/quest-data.js";
+import questArray from './data/quest-data.js';
 
 export function generateUser(formData){
     return {
@@ -21,6 +21,7 @@ export function getUser(){
     return JSON.parse(userString); 
 }
 
+
 export function findById(id, itemList) {
     for (let item of itemList) {
         if (item.id === id){
@@ -32,7 +33,7 @@ export function findById(id, itemList) {
 
 
 export function scoreQuest(choiceObject, questID, userObject){
-    // userObject.insta += choiceObject.insta; 
-    // userObject.clif += choiceObject.clif; 
-    // userObject.completed[questID] = true;
+    userObject.insta += choiceObject.insta; 
+    userObject.clif += choiceObject.clif; 
+    userObject.completed[questID] = true;
 }
