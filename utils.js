@@ -29,20 +29,7 @@ export function findById(id, itemList) {
     }
 }
 
-export function loadProfile(){
-    const name = document.getElementById('name'); 
-    const character = document.getElementById('character'); 
-    const insta = document.getElementById('insta'); 
-    const clif = document.getElementById('clif'); 
 
-    const user = getUser(); 
-
-    name.textContent = user.name; 
-    character.textContent = user.character; 
-    insta.textContent = user.insta; 
-    clif.textContent = user.clif;
-
-}
 
 export function scoreQuest(choiceObject, questID, userObject){
     // userObject.insta += choiceObject.insta; 
