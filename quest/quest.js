@@ -24,8 +24,30 @@ for (let choice of questData.choices){
     const input = document.createElement('input'); 
     input.type = 'radio'; 
     input.name = 'choice-radio-buttons'; 
+    input.required = true; 
     input.value = choice.id; 
+
+    const span = document.createElement('span'); 
+    span.textContent = choice.description;
     
-    label.appendChild(input); 
+    label.append(input, span); 
     questChoices.append(label); 
+}
+
+const submitBtn = document.createElement('button'); 
+submitBtn.textContent = 'Submit'; 
+questChoices.append(submitBtn); 
+
+questChoices.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+    const selectedRadio = document.querySelector('input[type="radio"]:checked'); 
+    const choice = findById(questData.choices, selectedRadio.value); 
+
+    const user = getUser(); 
+
+    // add scoreQuest(choice, questData.id, user); 
+    // setUser(user); 
+
+    // const questDetails 
+
 }
