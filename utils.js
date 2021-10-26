@@ -14,6 +14,10 @@ export function setUser(userObject){
     localStorage.setItem('USER', userString); 
 }
 
-// export function findById(id){
-
-// }
+export function findById(id, itemList) {
+    for (let item of itemList) {
+        if (item.id === id){
+            return item;
+        }
+    }
+}

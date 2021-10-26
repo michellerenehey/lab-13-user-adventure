@@ -60,7 +60,7 @@
     * mapLinks.appendChild(a)
 
 ## QUEST DETAILS PAGE
-### HTML
+### HTML (all dynamically made)
 - [ ] title
 - [ ] description 
 - [ ] quest image
