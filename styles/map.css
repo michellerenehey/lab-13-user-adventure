@@ -1,0 +1,22 @@
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Zen Kurenaido', sans-serif;
+    border: solid 3px orange;
+}
+
+.profile-stat-label {
+    color: orange; 
+}
+
+#map-links {
+    display: flex; 
+    flex-direction: column;
+}
