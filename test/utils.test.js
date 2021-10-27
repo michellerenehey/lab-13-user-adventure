@@ -95,4 +95,4 @@ test('scoreQuest should update insta, clif and completed on the userObject', (ex
     expect.equal(userObject.insta, 20); 
     expect.equal(userObject.clif, 25); 
     expect.equal(userObject.completed[questId], true); 
-})
+}); 
