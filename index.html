@@ -9,9 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <title>An Enchanted Adventure</title>
@@ -19,9 +18,15 @@
 
 <body>
     <h1>Welcome to Your Enchanted Adventure</h1>
+    <p class="opening-remarks">The Enchantments are a <span class="orange">magical</span> wilderness area in central Washington, just outside of Leavenworth. A series of
+        alpine-lakes, you must win a lottery to camp there. Once you go, you'll
+        be dreaming of your return forever. On today's quest you'll survive on <span class="orange">Clif Bars</span> - run out, and you must live there (off the land) forever. 
+        Your success will be judged by <span class="orange">Instagram likes</span>. While the makers of the game don't love social media, this particular spot seems to be
+        an Instagram paradise. <span class="orange">So, play wisely, friends!  </span> 
+     </p>
     <form id="user-form">
         <label>
-            Who is adventuring today? 
+            Who is adventuring today?
             <input name="name" type="text" placeholder="Enter your name...">
         </label>
         <h2>What character will you play?</h2>
@@ -36,11 +41,11 @@
             </label>
             <label>
                 <input type="radio" name="character" value="minimalist">
-                Minimalst, I'm bringing nothing! 
+                Minimalst, I'm bringing nothing!
             </label>
             <label>
                 <input type="radio" name="character" value="minimalist">
-                Maximalist, I'm bringing everything! 
+                Maximalist, I'm bringing everything!
             </label>
         </div>
         <button id="submit-button">Submit</button>
