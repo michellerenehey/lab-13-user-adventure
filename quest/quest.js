@@ -61,23 +61,4 @@ questChoices.addEventListener('submit', (e) => {
     scoreQuest(userChoice, questData.id, user); 
     setUser(user);
     updateUser(user); 
-    
-    // const character = document.getElementById('character-id'); 
-    // character.textContent = `Character: ${user.character}`; 
-
-    // const insta = document.getElementById('insta-id');  
-    // insta.textContent = `Instagram Likes: ${user.insta}`; 
-
-    // const clif = document.getElementById('clif-id'); 
-    // clif.textContent = `Clif Bars: ${user.clif}`; 
-
-
-// grab selected radio button from choices array (findByID)
-// get user data from LS
-// update user using scoreQuest function
-    // takes choice, questID, user
-    // update insta, clif, and completed object
-// reset LS
-// display the result associated with the button 
-// display a link to go back to the map 
 }); 
