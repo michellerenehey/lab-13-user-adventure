@@ -37,6 +37,15 @@ let instaStory = 'What about your Instagram?...' + instaMessage + '.';
 finalStoryHealth.textContent = story; 
 finalStoryInsta.textContent = instaStory; 
 
+// play again button
+const playAgainBtn = document.getElementById('play-again'); 
+
+playAgainBtn.addEventListener('click', () => {
+    localStorage.removeItem('USER'); 
+    window.location.replace('..'); 
+}); 
+
+// functions 
 function clifPoints(clif){
     if (clif <= 0){
         return 'finished'; 
