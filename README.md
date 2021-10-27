@@ -112,3 +112,52 @@
     * grab html header elements (name, character, insta, clif)
     * call getUser() to grab items from local storage
     * append name, character, insta, and clif with info from LS
+
+
+## END GAME PAGE
+
+### HTML 
+* Header (just like our other pages, with user stats) 
+* Body: 
+    * empty `<p>` tag for final results (pull down from up top?)
+    * empty `<p>` tag where we will put the final story 
+    * empty `<button>` to start over 
+## EVENTS
+- grab user from local storage
+- grab final-story (p tag) from html 
+
+- grab clifPoints score (based on userObject)
+- grab instaLikes score (based on userObject)
+- grab clifPoint result message (based on clif score)
+- grab Insta results msesage (if dead, show dead; else show alive)
+
+- update text on page save as story
+- set story to be in the empty p element 
+
+## TO-DO
+* Create a "score" function for clifPoints: 
+    * if clifbars <= 0; dead
+    * if clifbars < 10; weak
+    * else; strong
+
+* Create a "score" function for instaLikes: 
+    * if insta === 0; poor [ Ron Swanson ]
+    * if insta < 50; modest [ you're a regular person ]
+    * else; rich [ influencer ]
+
+* Create a story arc: 
+* clifPoints results / messages: 
+    * dead: 'you ran out of food, so now you live off the earth's bounty - mushrooms, anyone?'
+    * weak: 'you don't have enough food to sustain your journey, you must turn around'
+    * strong: 'you're strong as hell - you finish the backpacking trip, and become a lifetime guide'
+
+* alive & Insta points results / messages: 
+    * poor: 'your social presence is like Ron Swanson, better stay in the woods until your phone runs out of battery'
+    * modest: 'hey! you have an average social presence!'
+    * rich: 'wow. you are an influncer! now, turn your phone off and enjoy the woods!'
+
+* dead & Insta points results / messages: 
+     * poor: 'we'll see you on the trail, Ron Swanson'
+    * modest: 'the local pub will brew a beer in your honor, come down and enjoy it anytime'
+    * rich: 'you live in the woods for so long, and are so well-known, that they name an Alpine lake after you. you swim in it every day.'   
+
