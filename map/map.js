@@ -1,6 +1,6 @@
-// import quest list 
+
 import questArray from '../data/quest-data.js'; 
-import { getUser } from '../utils.js';
+import { getUser, completedAllQuests } from '../utils.js';
 import { renderUser } from '../render-user.js';
 
 // grab DOM elements 
@@ -10,7 +10,7 @@ const mapLinks = document.getElementById('map-links');
 let user = getUser(); 
 
 //
-if (user.clif <= 0) {
+if (user.clif <= 0 || completedAllQuests(user)){
     window.location.replace('../gameover'); 
 }
 
@@ -41,7 +41,7 @@ function displayLink(quest){
 // create function for removing link 
 function displaySpan(quest){
     const linkSpan = document.createElement('span'); 
-    linkSpan.textContent = quest.title; 
+    linkSpan.textContent = `Complete: ${quest.title}`; 
     linkSpan.classList.add('map-directions'); 
     linkSpan.classList.add('dead-link'); 
     linkSpan.style.top = quest.map.top; 

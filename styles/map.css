@@ -28,7 +28,7 @@ body {
 
 .map-directions {
     position: absolute; 
-    background-color: orangered;
+    background-color: rgba(219, 34, 0, 0.72);
 }
 
 .live-link:hover {
@@ -37,4 +37,5 @@ body {
 
 .dead-link {
     text-decoration: line-through;
+    background-color: rgba(219, 34, 0, 0.26);
 }

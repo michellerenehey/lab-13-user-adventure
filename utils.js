@@ -1,4 +1,4 @@
-// import questArray from './data/quest-data.js';
+import questArray from './data/quest-data.js';
 
 export function generateUser(formData){
     return {
@@ -31,14 +31,16 @@ export function findById(id, itemList) {
 }
 
 
-
 export function scoreQuest(choiceObject, questID, userObject){
     userObject.insta += choiceObject.insta; 
     userObject.clif += choiceObject.clif; 
     userObject.completed[questID] = true;
 }
 
-// export function displayLinks 
-
-
-// export function displaySpan
+export function completedAllQuests(userObject){
+    for (let quest of questArray){
+        if (!userObject.completed[quest.id]){
+            return false;} 
+    }
+    return true; // needs to be out of the loop
+}
