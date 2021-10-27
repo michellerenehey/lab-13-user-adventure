@@ -9,6 +9,11 @@ const mapLinks = document.getElementById('map-links');
 // 
 let user = getUser(); 
 
+//
+if (user.clif <= 0) {
+    window.location.replace('../gameover'); 
+}
+
 // 
 for (let quest of questArray){
     const link = document.createElement('a'); 

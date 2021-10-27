@@ -37,3 +37,8 @@ export function scoreQuest(choiceObject, questID, userObject){
     userObject.clif += choiceObject.clif; 
     userObject.completed[questID] = true;
 }
+
+// export function displayLinks 
+
+
+// export function displaySpan
