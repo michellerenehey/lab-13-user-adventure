@@ -31,6 +31,10 @@ function displayLink(quest){
     const link = document.createElement('a'); 
     link.href = `../quest/?id=${quest.id}`; 
     link.textContent = quest.title; 
+    link.classList.add('map-directions'); 
+    link.classList.add('live-link'); 
+    link.style.top = quest.map.top; 
+    link.style.left = quest.map.left;
     mapLinks.appendChild(link); 
 }
 
@@ -38,5 +42,9 @@ function displayLink(quest){
 function displaySpan(quest){
     const linkSpan = document.createElement('span'); 
     linkSpan.textContent = quest.title; 
+    linkSpan.classList.add('map-directions'); 
+    linkSpan.classList.add('dead-link'); 
+    linkSpan.style.top = quest.map.top; 
+    linkSpan.style.left = quest.map.left;
     mapLinks.appendChild(linkSpan); 
 }
