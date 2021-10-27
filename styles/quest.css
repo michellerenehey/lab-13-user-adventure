@@ -1,3 +1,9 @@
+header {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,26 +12,25 @@ body {
     border: solid 3px orange;
 }
 
-#user-form {
+.user-info-text {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+}
+
+#quest {
     display: flex; 
     flex-direction: column;
     align-items: center;
 }
 
-#characters {
+#quest-choices {
     display: flex; 
     flex-direction: column;
     align-items: center;
 }
 
-button {
-    margin: 20px; 
-    background-color: orange;
-    border: 1px solid orangered; 
-    font-family: 'Zen Kurenaido', sans-serif;
-    color: white;
-}
-
-img {
-    border: solid 3px orange; 
+.hidden {
+    display: none; 
 }
