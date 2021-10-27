@@ -9,14 +9,33 @@ const user = getUser();
 renderUser(user); 
 
 // grab story spot in HTML
-const finalStory = document.getElementById('final-story'); 
+const finalStoryHealth = document.getElementById('final-story-health'); 
+const finalStoryInsta = document.getElementById('final-story-insta'); 
 
 // grab user scores
+const instaResult = instaPoints(user.insta); 
+const clifResult = clifPoints(user.clif); 
 
-// grab messages 
+// grab clif message 
+const clifMessage = clifPointsMessages[clifResult]; 
 
+// grab insta message 
+let secondMessage = ''; 
+if (clifResult === 'finished') {
+    secondMessage = finishedInstaPointsMessages; 
+} else {
+    secondMessage = aliveInstaPointsMessages; 
+}
+const instaMessage = secondMessage[instaResult]; 
 
+let story = 'Your trip has come to an end, '; 
+story += user.name + ' the ' + user.character + '.'; 
+story += 'Your fate? ' + clifMessage + '.'; 
 
+let instaStory = 'What about your Instagram?...' + instaMessage + '.'; 
+
+finalStoryHealth.textContent = story; 
+finalStoryInsta.textContent = instaStory; 
 
 function clifPoints(clif){
     if (clif <= 0){
@@ -24,5 +43,15 @@ function clifPoints(clif){
     } else if (clif < 10){
         return 'weak'; 
     } else 
-        return 'healthy'; 
+        return 'strong'; 
 }
+
+function instaPoints(insta){
+    if (insta <= 0){
+        return 'poor'; 
+    } else if (insta < 20){
+        return 'modest'; 
+    } else 
+        return 'rich'; 
+}
+
