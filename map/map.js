@@ -23,6 +23,7 @@ for (let quest of questArray){
     }
 }
 
+// update user "score"
 renderUser(user); 
 
 // create function for links 

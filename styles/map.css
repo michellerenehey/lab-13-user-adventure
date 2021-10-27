@@ -19,4 +19,8 @@ body {
 #map-links {
     display: flex; 
     flex-direction: column;
+    background-image: url('../assets/topo-map.jpeg');
+    position: relative;
+    width: 100%; 
+    background-size: cover;
 }
