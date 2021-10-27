@@ -16,7 +16,11 @@ if (user.clif <= 0) {
 
 // 
 for (let quest of questArray){
-    displayLink(quest); 
+    if (user.completed[quest.id]){
+        displaySpan(quest); 
+    } else {
+        displayLink(quest); 
+    }
 }
 
 renderUser(user); 
