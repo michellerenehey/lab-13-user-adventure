@@ -7,14 +7,14 @@ export const clifPointsMessages = {
 
 // insta
 export const finishedInstaPointsMessages = {
-    poor: `We'll see you on the trail, Ron Swanson`, 
-    modest: `The local pub heard about your wooded fate, come down and enjoy it anytime`, 
-    rich: `You live in the woods for so long, and are so well-known, that they name an Alpine lake after you. you swim in it every day.`,  
+    poor: `You never were much for social media. We'll see you on the trail, Ron Swanson`, 
+    modest: `Your social media remains neutral, but you caught the eye of Icicle Brewing. They heard about your wooded fate, and brewed a beer in your name.`, 
+    rich: `Your Enchantment posts made you famous. Even though you're in the woods, they name an Alpine lake after you and you swim in it every day.`,  
 }; 
 
 
 export const aliveInstaPointsMessages = {
-    poor: `Your social presence is like Ron Swanson, better stay in the woods until your phone runs out of battery`, 
-    modest: `You have an average social presence!`, 
+    poor: `Your social presence is like Ron Swanson. Do you even exist if you don't post about it?`, 
+    modest: `You have an average social presence! Congrats!`, 
     rich: `You are an influncer! Now, turn your phone off and enjoy the trip.`, 
 }; 

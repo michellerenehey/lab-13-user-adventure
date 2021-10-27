@@ -32,7 +32,7 @@ let story = 'Your trip has come to an end, ';
 story += user.name + ' the ' + user.character + '.'; 
 story += 'Your fate? ' + clifMessage + '.'; 
 
-let instaStory = 'What about your Instagram?...' + instaMessage + '.'; 
+let instaStory = 'What about your Instagram?' + instaMessage + '.'; 
 
 finalStoryHealth.textContent = story; 
 finalStoryInsta.textContent = instaStory; 
