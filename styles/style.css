@@ -5,6 +5,7 @@ body {
     font-family: 'Zen Kurenaido', sans-serif;
     border: solid 3px orange;
     box-sizing: border-box; 
+    padding: 50px; 
 }
 
 #user-form {
