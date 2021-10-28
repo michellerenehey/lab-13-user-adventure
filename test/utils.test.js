@@ -1,5 +1,5 @@
 // import functions
-import { generateUser, setUser, getUser, scoreQuest } from '../utils.js'; 
+import { generateUser, setUser, getUser, scoreQuest, completedAllQuests } from '../utils.js'; 
 
 const test = QUnit.test;
 
@@ -96,3 +96,42 @@ test('scoreQuest should update insta, clif and completed on the userObject', (ex
     expect.equal(userObject.clif, 25); 
     expect.equal(userObject.completed[questId], true); 
 }); 
+
+// TEST 5
+test('completedAllQuests should return true if all quests are completed', (expect) => {
+    //arrange
+    const userObject = 
+        {
+            completed: { aasgard: true, wind: true, goats: true }, 
+            insta: 20, 
+            clif: 65, 
+            name: 'Michelle',
+            character: 'Newbie' }; 
+
+    const expected = true; 
+    //act
+    const actual = completedAllQuests(userObject); 
+
+    //assert
+    expect.equal(expected, actual); 
+});
+
+// TEST 6
+test('completedAllQuests should return false if all quests are NOT complete', (expect) => {
+    //arrange
+    const userObject = 
+        {
+            completed: { aasgard: true }, 
+            insta: 20, 
+            clif: 65, 
+            name: 'Michelle',
+            character: 'Newbie' }; 
+
+    const expected = false; 
+    
+    //act
+    const actual = completedAllQuests(userObject); 
+
+    //assert
+    expect.equal(expected, actual); 
+});

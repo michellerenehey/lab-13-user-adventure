@@ -4,6 +4,7 @@ body {
     align-items: center;
     font-family: 'Zen Kurenaido', sans-serif;
     border: solid 3px orange;
+    box-sizing: border-box; 
 }
 
 #user-form {
@@ -28,4 +29,11 @@ button {
 
 img {
     border: solid 3px orange; 
+}
+
+.opening-remarks {
+    width: 90vw; 
+}
+.orange {
+    color: orange;
 }

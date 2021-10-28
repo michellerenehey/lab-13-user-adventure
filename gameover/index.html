@@ -13,18 +13,20 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/map.css">    
-    <title>Map Page</title>
+    <link rel="stylesheet" href="../styles/gameover.css">    
+    <title>Game Over</title>
 </head>
-
 <body>
     <header>
         <h3>Enchanted Adventure</h3>
         <div id="user-profile"></div>
     </header>
-    <div id="map-section">
-        <h1>The Enchantments</h1>
-        <section id="map-links"></section>
+    <div class="results">
+        <h2>Your Backpacking Trip Has Ended</h2>
+        <p id="final-story-health"></p>
+        <p id="final-story-insta"></p>
     </div>
-    <script type="module" src="./map.js"></script>
+    <button id="play-again">Play Again</button>
+    <script type="module" src="./gameover.js"></script>
 </body>
 </html>

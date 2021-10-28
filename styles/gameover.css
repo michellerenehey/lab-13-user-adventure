@@ -1,0 +1,10 @@
+#play-again:hover{
+    cursor: pointer;
+}
+
+.results {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

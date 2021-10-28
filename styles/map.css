@@ -19,4 +19,23 @@ body {
 #map-links {
     display: flex; 
     flex-direction: column;
+    background-image: url('../assets/topo-map.jpeg');
+    position: relative;
+    width: 500px; 
+    height: 300px;
+    background-size: cover;
+}
+
+.map-directions {
+    position: absolute; 
+    background-color: rgba(219, 34, 0, 0.72);
+}
+
+.live-link:hover {
+    cursor: pointer;
+}
+
+.dead-link {
+    text-decoration: line-through;
+    background-color: rgba(219, 34, 0, 0.26);
 }
